@@ -1,0 +1,1402 @@
+[
+    {
+        "pool_id": "0x277667eb3e34f134adf870be9550e9f323d0dc24",
+        "token0": "ease.org",
+        "token1": "ez-cvxsteCRV",
+        "token0_reserve": 1001400.0001010001,
+        "token1_reserve": 0.09815768987895734
+    },
+    {
+        "pool_id": "0x8c0411f2ad5470a66cb2e9c64536cfb8dcd54d51",
+        "token0": "ease.org",
+        "token1": "ez-yvCurve-IronBank",
+        "token0_reserve": 1300.0001009098282,
+        "token1_reserve": 1.275526246490418
+    },
+    {
+        "pool_id": "0x055284a4ca6532ecc219ac06b577d540c686669d",
+        "token0": "ease.org",
+        "token1": "ez-SLP-WBTC-WETH",
+        "token0_reserve": 1200.0008832992057,
+        "token1_reserve": 1.1998845999999914e-11
+    },
+    {
+        "pool_id": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+        "token0": "USDC",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.1703804029790681
+    },
+    {
+        "pool_id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+        "token0": "USDC",
+        "token1": "WETH",
+        "token0_reserve": 137.17378066658824,
+        "token1_reserve": 0.10768819545754858
+    },
+    {
+        "pool_id": "0x99ac8ca7087fa4a2a1fb6357269965a2014abc35",
+        "token0": "WBTC",
+        "token1": "USDC",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed",
+        "token0": "WBTC",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 8.194658538812668
+    },
+    {
+        "pool_id": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+        "token0": "WETH",
+        "token1": "USDT",
+        "token0_reserve": 1.747254483942538,
+        "token1_reserve": 637.5953034669827
+    },
+    {
+        "pool_id": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "token0": "WBTC",
+        "token1": "WETH",
+        "token0_reserve": 0.007357435847183063,
+        "token1_reserve": 0.34799898736207185
+    },
+    {
+        "pool_id": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+        "token0": "WETH",
+        "token1": "USDT",
+        "token0_reserve": 0.06144532557202451,
+        "token1_reserve": 11.31581468089999
+    },
+    {
+        "pool_id": "0x6dcba3657ee750a51a13a235b4ed081317da3066",
+        "token0": "beraSTONE",
+        "token1": "WETH",
+        "token0_reserve": 119.12174126518651,
+        "token1_reserve": 11.038963283933773
+    },
+    {
+        "pool_id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168",
+        "token0": "DAI",
+        "token1": "USDC",
+        "token0_reserve": 9908.551727612963,
+        "token1_reserve": 26604.97232490794
+    },
+    {
+        "pool_id": "0xa6cc3c2531fdaa6ae1a3ca84c2855806728693e8",
+        "token0": "LINK",
+        "token1": "WETH",
+        "token0_reserve": 708.1890201455576,
+        "token1_reserve": 2.237442270864934
+    },
+    {
+        "pool_id": "0x9db9e0e53058c89e5b94e29621a205198648425b",
+        "token0": "WBTC",
+        "token1": "USDT",
+        "token0_reserve": 0.0008450218620550203,
+        "token1_reserve": 2061.974153678751
+    },
+    {
+        "pool_id": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8",
+        "token0": "DAI",
+        "token1": "WETH",
+        "token0_reserve": 8.869977086955261,
+        "token1_reserve": 1.3380820896361831
+    },
+    {
+        "pool_id": "0x1d42064fc4beb5f8aaf85f4617ae8b3b5b8bd801",
+        "token0": "UNI",
+        "token1": "WETH",
+        "token0_reserve": 551.4217499233177,
+        "token1_reserve": 0.006503804533226184
+    },
+    {
+        "pool_id": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+        "token0": "USDC",
+        "token1": "USDT",
+        "token0_reserve": 0.24228990994639626,
+        "token1_reserve": 730.2315882800282
+    },
+    {
+        "pool_id": "0x5796d7ad51583ae2c7297652edb7006bcd90519d",
+        "token0": "HKDM",
+        "token1": "USDM",
+        "token0_reserve": 394514330.52038443,
+        "token1_reserve": 49417564.373030774
+    },
+    {
+        "pool_id": "0x11950d141ecb863f01007add7d1a342041227b58",
+        "token0": "PEPE",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xe8f7c89c5efa061e340f2d2f206ec78fd8f7e124",
+        "token0": "WBTC",
+        "token1": "cbBTC",
+        "token0_reserve": 0.5347228165891457,
+        "token1_reserve": 0.3178579973595471
+    },
+    {
+        "pool_id": "0x87428a53e14d24ab19c6ca4939b4df93b8996ca9",
+        "token0": "WBTC",
+        "token1": "LBTC",
+        "token0_reserve": 142.86011584862325,
+        "token1_reserve": 251.1028735077088
+    },
+    {
+        "pool_id": "0xc5c134a1f112efa96003f8559dba6fac0ba77692",
+        "token0": "WHITE",
+        "token1": "WETH",
+        "token0_reserve": 3043.7156300773363,
+        "token1_reserve": 8464.552825268092
+    },
+    {
+        "pool_id": "0xf239009a101b6b930a527deaab6961b6e7dec8a6",
+        "token0": "PEPE",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0019985023872991863
+    },
+    {
+        "pool_id": "0xe8c6c9227491c0a8156a0106a0204d881bb7e531",
+        "token0": "MKR",
+        "token1": "WETH",
+        "token0_reserve": 36.972372875815566,
+        "token1_reserve": 3.47745113486426
+    },
+    {
+        "pool_id": "0xcbfb0745b8489973bf7b334d54fdbd573df7ef3c",
+        "token0": "WBTC",
+        "token1": "USDC",
+        "token0_reserve": 209.08100098005363,
+        "token1_reserve": 42.11275808212551
+    },
+    {
+        "pool_id": "0x3afdc5e6dfc0b0a507a8e023c9dce2cafc310316",
+        "token0": "MKR",
+        "token1": "WETH",
+        "token0_reserve": 8958.423469899473,
+        "token1_reserve": 1310.5596204820083
+    },
+    {
+        "pool_id": "0x99950bae3d0b79b8bee86a8a208ae1b087b9dcb0",
+        "token0": "TRX",
+        "token1": "WETH",
+        "token0_reserve": 0.0938563488214068,
+        "token1_reserve": 9390.828231401973
+    },
+    {
+        "pool_id": "0x202a6012894ae5c288ea824cbc8a9bfb26a49b93",
+        "token0": "WETH",
+        "token1": "weETH",
+        "token0_reserve": 9153.304838782418,
+        "token1_reserve": 156.30748918726306
+    },
+    {
+        "pool_id": "0x4a25dbdf9629b1782c3e2c7de3bdce41f1c7f801",
+        "token0": "USDM",
+        "token1": "USDT",
+        "token0_reserve": 9096294.145668004,
+        "token1_reserve": 10903746.678138709
+    },
+    {
+        "pool_id": "0x5ab53ee1d50eef2c1dd3d5402789cd27bb52c1bb",
+        "token0": "AAVE",
+        "token1": "WETH",
+        "token0_reserve": 43.11042310076313,
+        "token1_reserve": 2.0577787119454714
+    },
+    {
+        "pool_id": "0x970a7749ecaa4394c8b2bf5f2471f41fd6b79288",
+        "token0": "wM",
+        "token1": "USDC",
+        "token0_reserve": 7945033.307092931,
+        "token1_reserve": 10114586.569915203
+    },
+    {
+        "pool_id": "0x60594a405d53811d3bc4766596efd80fd545a270",
+        "token0": "DAI",
+        "token1": "WETH",
+        "token0_reserve": 10177.356656369095,
+        "token1_reserve": 4.203786467961885
+    },
+    {
+        "pool_id": "0x0858e2b0f9d75f7300b38d64482ac2c8df06a755",
+        "token0": "OHM",
+        "token1": "sUSDS",
+        "token0_reserve": 749999.9360166049,
+        "token1_reserve": 1948777.15684383
+    },
+    {
+        "pool_id": "0xc1cd3d0913f4633b43fcddbcd7342bc9b71c676f",
+        "token0": "INST",
+        "token1": "WETH",
+        "token0_reserve": 159.4104561292231,
+        "token1_reserve": 0.0002678809731061848
+    },
+    {
+        "pool_id": "0x7baece5d47f1bc5e1953fbe0e9931d54dab6d810",
+        "token0": "TURBO",
+        "token1": "WETH",
+        "token0_reserve": 4602545.985748235,
+        "token1_reserve": 2.450815739158209
+    },
+    {
+        "pool_id": "0x40e629a26d96baa6d81fae5f97205c2ab2c1ff29",
+        "token0": "WETH",
+        "token1": "ETHM",
+        "token0_reserve": 5001.017284071917,
+        "token1_reserve": 5000.982715927351
+    },
+    {
+        "pool_id": "0x6c6bc977e13df9b0de53b251522280bb72383700",
+        "token0": "DAI",
+        "token1": "USDC",
+        "token0_reserve": 7709.82034070137,
+        "token1_reserve": 7366.2140041362945
+    },
+    {
+        "pool_id": "0xa3f558aebaecaf0e11ca4b2199cc5ed341edfd74",
+        "token0": "LDO",
+        "token1": "WETH",
+        "token0_reserve": 28.58432436931657,
+        "token1_reserve": 0.002055838540460962
+    },
+    {
+        "pool_id": "0x5764a6f2212d502bc5970f9f129ffcd61e5d7563",
+        "token0": "SHIB",
+        "token1": "WETH",
+        "token0_reserve": 12045710.475015033,
+        "token1_reserve": 0.09493653323988224
+    },
+    {
+        "pool_id": "0xf8e349d1d827a6edf17ee673664cfad4ca78c533",
+        "token0": "USDC",
+        "token1": "SEI",
+        "token0_reserve": 5067123.167270147,
+        "token1_reserve": 31083051.814354885
+    },
+    {
+        "pool_id": "0x7b1e5d984a43ee732de195628d20d05cfabc3cc7",
+        "token0": "WETH",
+        "token1": "ONDO",
+        "token0_reserve": 10.841931066366573,
+        "token1_reserve": 23544.542005507454
+    },
+    {
+        "pool_id": "0xac4b3dacb91461209ae9d41ec517c2b9cb1b7daf",
+        "token0": "APE",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x5d27fdd96c8e4028edbabf3d667be24769425199",
+        "token0": "USDa",
+        "token1": "USDT",
+        "token0_reserve": 11079664.132028788,
+        "token1_reserve": 922820.9261275497
+    },
+    {
+        "pool_id": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3",
+        "token0": "WETH",
+        "token1": "weETH",
+        "token0_reserve": 0.01532665077916632,
+        "token1_reserve": 0.02243373493949139
+    },
+    {
+        "pool_id": "0xa04d13f092f68f603a193832222898b0d9f52c71",
+        "token0": "MOVE",
+        "token1": "WETH",
+        "token0_reserve": 10400.556898758936,
+        "token1_reserve": 1.3194631183986314
+    },
+    {
+        "pool_id": "0x0c30062368eefb96bf3ade1218e685306b8e89fa",
+        "token0": "BITCOIN",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x7858e59e0c01ea06df3af3d20ac7b0003275d4bf",
+        "token0": "USDC",
+        "token1": "USDT",
+        "token0_reserve": 3365.040142381428,
+        "token1_reserve": 8328.612162175205
+    },
+    {
+        "pool_id": "0x3b685307c8611afb2a9e83ebc8743dc20480716e",
+        "token0": "FTM",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+        "token0": "WETH",
+        "token1": "USDT",
+        "token0_reserve": 0.0,
+        "token1_reserve": 47.645062125242006
+    },
+    {
+        "pool_id": "0xfb82dd4d657033133eea6e5b7015042984c5825f",
+        "token0": "WBTC",
+        "token1": "FBTC",
+        "token0_reserve": 19.22148218296517,
+        "token1_reserve": 104.02896034947283
+    },
+    {
+        "pool_id": "0x68082ecc5bbad8fe77c2cb9d0e3403d9a00ccbc2",
+        "token0": "WDOGE",
+        "token1": "WETH",
+        "token0_reserve": 31944263.30096328,
+        "token1_reserve": 907.6160898995291
+    },
+    {
+        "pool_id": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa",
+        "token0": "wstETH",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 2.4321202264050746e-07
+    },
+    {
+        "pool_id": "0x92560c178ce069cc014138ed3c2f5221ba71f58a",
+        "token0": "WETH",
+        "token1": "ENS",
+        "token0_reserve": 4.109188531575143,
+        "token1_reserve": 1259.5234707339876
+    },
+    {
+        "pool_id": "0x2c21d8fe29cdbf6c98ff638ac50b51da9b816128",
+        "token0": "GASP",
+        "token1": "USDT",
+        "token0_reserve": 84011933.05946746,
+        "token1_reserve": 973163.7068268773
+    },
+    {
+        "pool_id": "0xc3db44adc1fcdfd5671f555236eae49f4a8eea18",
+        "token0": "ENA",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xe15e6583425700993bd08f51bf6e7b73cd5da91b",
+        "token0": "WBTC",
+        "token1": "BADGER",
+        "token0_reserve": 34.13228855065435,
+        "token1_reserve": 1165733.0773299523
+    },
+    {
+        "pool_id": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+        "token0": "USDC",
+        "token1": "WETH",
+        "token0_reserve": 87.99906852276646,
+        "token1_reserve": 0.3611971830254277
+    },
+    {
+        "pool_id": "0xb2c86ff752f18499b70e8f642b3421405d50d6e9",
+        "token0": "WBTC",
+        "token1": "SAITABIT",
+        "token0_reserve": 48.79356329627784,
+        "token1_reserve": 5510049113.632325
+    },
+    {
+        "pool_id": "0xe333e366503f620e0242796431dc74fffd258e66",
+        "token0": "DAI",
+        "token1": "ELON",
+        "token0_reserve": 0.0,
+        "token1_reserve": 44469309272244.53
+    },
+    {
+        "pool_id": "0x127452f3f9cdc0389b0bf59ce6131aa3bd763598",
+        "token0": "WETH",
+        "token1": "SOL",
+        "token0_reserve": 0.004571927109456567,
+        "token1_reserve": 0.04761840906989444
+    },
+    {
+        "pool_id": "0x69d91b94f0aaf8e8a2586909fa77a5c2c89818d5",
+        "token0": "HEX",
+        "token1": "USDC",
+        "token0_reserve": 813.461953794542,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x290a6a7460b308ee3f19023d2d00de604bcf5b42",
+        "token0": "MATIC",
+        "token1": "WETH",
+        "token0_reserve": 27.25510374192341,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x2f62f2b4c5fcd7570a709dec05d68ea19c82a9ec",
+        "token0": "SHIB",
+        "token1": "WETH",
+        "token0_reserve": 104027814.44294234,
+        "token1_reserve": 0.4746691083387008
+    },
+    {
+        "pool_id": "0x9dbe5dffaeb4ac2e0ac14f8b4e08b3bc55de5232",
+        "token0": "WBTC",
+        "token1": "FBTC",
+        "token0_reserve": 0.22764920852790468,
+        "token1_reserve": 88.42104427836937
+    },
+    {
+        "pool_id": "0x4b5ab61593a2401b1075b90c04cbcdd3f87ce011",
+        "token0": "WETH",
+        "token1": "LOOKS",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xc4ce8e63921b8b6cbdb8fcb6bd64cc701fb926f2",
+        "token0": "CULT",
+        "token1": "WETH",
+        "token0_reserve": 2288314253.8676357,
+        "token1_reserve": 1246.76812325079
+    },
+    {
+        "pool_id": "0x1df4c6e36d61416813b42fe32724ef11e363eddc",
+        "token0": "PANDORA",
+        "token1": "WETH",
+        "token0_reserve": 3944.258496152486,
+        "token1_reserve": 304.87189314853237
+    },
+    {
+        "pool_id": "0x948b54a93f5ad1df6b8bff6dc249d99ca2eca052",
+        "token0": "FET",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xe936f0073549ad8b1fa53583600d629ba9375161",
+        "token0": "RNDR",
+        "token1": "WETH",
+        "token0_reserve": 3312.6006311884726,
+        "token1_reserve": 5.759540953866784
+    },
+    {
+        "pool_id": "0xa7b3bcc6c88da2856867d29f11c67c3a85634882",
+        "token0": "ELON",
+        "token1": "USDC",
+        "token0_reserve": 3232708526645.484,
+        "token1_reserve": 113868.47125578576
+    },
+    {
+        "pool_id": "0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47",
+        "token0": "USDe",
+        "token1": "USDT",
+        "token0_reserve": 1735.1640973243454,
+        "token1_reserve": 809.9579093900473
+    },
+    {
+        "pool_id": "0xcd423f3ab39a11ff1d9208b7d37df56e902c932b",
+        "token0": "PRIME",
+        "token1": "WETH",
+        "token0_reserve": 508.9807972887293,
+        "token1_reserve": 0.02320095391743724
+    },
+    {
+        "pool_id": "0xfde90a4cfc33834fd77061f037e4fb5e828cfae7",
+        "token0": "Geno ",
+        "token1": "WETH",
+        "token0_reserve": 1505011503013.7605,
+        "token1_reserve": 1658.539313069324
+    },
+    {
+        "pool_id": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+        "token0": "USDC",
+        "token1": "WETH",
+        "token0_reserve": 121.58619062863906,
+        "token1_reserve": 0.017377314349466485
+    },
+    {
+        "pool_id": "0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+        "token0": "WBTC",
+        "token1": "USDT",
+        "token0_reserve": 0.0,
+        "token1_reserve": 10924.705476983834
+    },
+    {
+        "pool_id": "0x543842cbfef3b3f5614b2153c28936967218a0e6",
+        "token0": "ELON",
+        "token1": "USDT",
+        "token0_reserve": 24396119232.202404,
+        "token1_reserve": 1974.7670728943976
+    },
+    {
+        "pool_id": "0x2982d3295a0e1a99e6e88ece0e93ffdfc5c761ae",
+        "token0": "wTAO",
+        "token1": "WETH",
+        "token0_reserve": 3.7831978369801202,
+        "token1_reserve": 0.3034503976283769
+    },
+    {
+        "pool_id": "0xd0a4c8a1a14530c7c9efdad0ba37e8cf4204d230",
+        "token0": "SHFL",
+        "token1": "USDC",
+        "token0_reserve": 14965078.055600459,
+        "token1_reserve": 2834738.872429262
+    },
+    {
+        "pool_id": "0x04708077eca6bb527a5bbbd6358ffb043a9c1c14",
+        "token0": "WETH",
+        "token1": "mETH",
+        "token0_reserve": 1486.6512131257125,
+        "token1_reserve": 1386.528997047663
+    },
+    {
+        "pool_id": "0x95a45a87dd4d3a1803039072f37e075f37b23d75",
+        "token0": "VIRTUAL",
+        "token1": "WETH",
+        "token0_reserve": 35399.08557984269,
+        "token1_reserve": 17.01067296107159
+    },
+    {
+        "pool_id": "0xc8219b876753a85025156b22176c2edea17aac53",
+        "token0": "MORPHO",
+        "token1": "WETH",
+        "token0_reserve": 806396.4290775339,
+        "token1_reserve": 495.7368293718942
+    },
+    {
+        "pool_id": "0x59c38b6775ded821f010dbd30ecabdcf84e04756",
+        "token0": "UNI",
+        "token1": "AAVE",
+        "token0_reserve": 10331.037879801763,
+        "token1_reserve": 157.83959174909813
+    },
+    {
+        "pool_id": "0x5aaa28ca43c6646fd1403e508f0fca1d92357dde",
+        "token0": "LCX",
+        "token1": "WETH",
+        "token0_reserve": 0.2332060764854901,
+        "token1_reserve": 2.11175550842113e-05
+    },
+    {
+        "pool_id": "0xc39e83fe4e412a885c0577c08eb53bdb6548004a",
+        "token0": "RCH",
+        "token1": "WETH",
+        "token0_reserve": 13085379.511693325,
+        "token1_reserve": 1434.742077926318
+    },
+    {
+        "pool_id": "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16",
+        "token0": "WBTC",
+        "token1": "USDC",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x580ee6b001348fa0deb675f4d55259c96c4a3a31",
+        "token0": "USDA",
+        "token1": "agEUR",
+        "token0_reserve": 4502914.345589635,
+        "token1_reserve": 5959571.243207839
+    },
+    {
+        "pool_id": "0xc2c390c6cd3c4e6c2b70727d35a45e8a072f18ca",
+        "token0": "WETH",
+        "token1": "EIGEN",
+        "token0_reserve": 1.0000000000002689e-08,
+        "token1_reserve": 21183.77459285168
+    },
+    {
+        "pool_id": "0xae893b75b00e6e5acc7a73a49a0de1cc78713578",
+        "token0": "NEW",
+        "token1": "WETH",
+        "token0_reserve": 4199499.999998998,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x00ed26e794b949e18b142f9108429b74ce08ac99",
+        "token0": "WETH",
+        "token1": "SPX",
+        "token0_reserve": 0.005969023185247188,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xf93bd55717b426a69badeb6458a07739c1d7a85f",
+        "token0": "eBTC",
+        "token1": "LBTC",
+        "token0_reserve": 33.641520206546964,
+        "token1_reserve": 68.98942580983825
+    },
+    {
+        "pool_id": "0x510100d5143e011db24e2aa38abe85d73d5b2177",
+        "token0": "RLB",
+        "token1": "WETH",
+        "token0_reserve": 2510248.839976491,
+        "token1_reserve": 87.05500192690117
+    },
+    {
+        "pool_id": "0x5d752f322befb038991579972e912b02f61a3dda",
+        "token0": "AGLD",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 9.665080374818692e-05
+    },
+    {
+        "pool_id": "0xf4ad61db72f114be877e87d62dc5e7bd52df4d9b",
+        "token0": "LDO",
+        "token1": "WETH",
+        "token0_reserve": 1117.4243758766922,
+        "token1_reserve": 0.006693541958877853
+    },
+    {
+        "pool_id": "0x331399c614ca67dee86733e5a2fba40dbb16827c",
+        "token0": "PORK",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xae750560b09ad1f5246f3b279b3767afd1d79160",
+        "token0": "PEAS",
+        "token1": "DAI",
+        "token0_reserve": 368334.44550545677,
+        "token1_reserve": 1048712.1720151342
+    },
+    {
+        "pool_id": "0xb26a868ffa4cbba926970d7ae9c6a36d088ee38c",
+        "token0": "WETH",
+        "token1": "KCS",
+        "token0_reserve": 1265.715743636679,
+        "token1_reserve": 243215.03636433397
+    },
+    {
+        "pool_id": "0xd3e9895230e8fb1460852f6cda3c4b926fbc29d8",
+        "token0": "CHEX",
+        "token1": "WETH",
+        "token0_reserve": 3077353.436034118,
+        "token1_reserve": 588.9220421823718
+    },
+    {
+        "pool_id": "0xc63b0708e2f7e69cb8a1df0e1389a98c35a76d52",
+        "token0": "FRAX",
+        "token1": "USDC",
+        "token0_reserve": 342575.0502576748,
+        "token1_reserve": 62542.60527702103
+    },
+    {
+        "pool_id": "0x88051b0eea095007d3bef21ab287be961f3d8598",
+        "token0": "OHM",
+        "token1": "WETH",
+        "token0_reserve": 105846.59409676345,
+        "token1_reserve": 1133.4988014080227
+    },
+    {
+        "pool_id": "0x360b9726186c0f62cc719450685ce70280774dc8",
+        "token0": "UNI",
+        "token1": "WETH",
+        "token0_reserve": 1942.8752735224764,
+        "token1_reserve": 0.00013765683842665829
+    },
+    {
+        "pool_id": "0x898adc9aa0c23dce3fed6456c34dbe2b57784325",
+        "token0": "USDC",
+        "token1": "SPOT",
+        "token0_reserve": 198095.46027164554,
+        "token1_reserve": 95890.62770622478
+    },
+    {
+        "pool_id": "0xdf9ab3c649005ebfdf682d2302ca1f673e0d37a2",
+        "token0": "WETH",
+        "token1": "BTRFLY",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xab22d1d671bb5cee8735c5ba29ea651ccda48a8e",
+        "token0": "syrupUSDC",
+        "token1": "USDC",
+        "token0_reserve": 3233776.299856472,
+        "token1_reserve": 1460707.6857089747
+    },
+    {
+        "pool_id": "0x6c4c7f46d9d4ef6bc5c9e155f011ad19fc4ef321",
+        "token0": "RFD",
+        "token1": "WETH",
+        "token0_reserve": 385002940291.3359,
+        "token1_reserve": 343.9526167373753
+    },
+    {
+        "pool_id": "0xc90ea5fa2d3eacbd63ae9e37c80a5772e57785b6",
+        "token0": "UST",
+        "token1": "UST",
+        "token0_reserve": 41668.42055170619,
+        "token1_reserve": 59018.54815612595
+    },
+    {
+        "pool_id": "0x844eb5c280f38c7462316aad3f338ef9bda62668",
+        "token0": "MUBI",
+        "token1": "WETH",
+        "token0_reserve": 13823689.596095951,
+        "token1_reserve": 42.19671430674575
+    },
+    {
+        "pool_id": "0x7832310cd0de39c4ce0a635f34d9a4b5b47fd434",
+        "token0": "Mog",
+        "token1": "WETH",
+        "token0_reserve": 25925342.00983781,
+        "token1_reserve": 0.007483475306139711
+    },
+    {
+        "pool_id": "0x433a00819c771b33fa7223a5b3499b24fbcd1bbc",
+        "token0": "wTAO",
+        "token1": "WETH",
+        "token0_reserve": 0.11222028278060567,
+        "token1_reserve": 0.6483734521392663
+    },
+    {
+        "pool_id": "0x4b62fa30fea125e43780dc425c2be5acb4ba743b",
+        "token0": "TONCOIN",
+        "token1": "WETH",
+        "token0_reserve": 16535.30295307293,
+        "token1_reserve": 38.88638070305253
+    },
+    {
+        "pool_id": "0xc45a81bc23a64ea556ab4cdf08a86b61cdceea8b",
+        "token0": "WETH",
+        "token1": "TITANX",
+        "token0_reserve": 8.645046125283061,
+        "token1_reserve": 92547647347.12004
+    },
+    {
+        "pool_id": "0x2a0330c7e979a4d18e5b0c987b877da24dd37d04",
+        "token0": "AIOZ",
+        "token1": "WETH",
+        "token0_reserve": 2251749.2199619925,
+        "token1_reserve": 359.4778962487709
+    },
+    {
+        "pool_id": "0x9e0905249ceefffb9605e034b534544684a58be6",
+        "token0": "HEX",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x83abecf7204d5afc1bea5df734f085f2535a9976",
+        "token0": "PEOPLE",
+        "token1": "WETH",
+        "token0_reserve": 49.09306607563543,
+        "token1_reserve": 0.0015749380188739325
+    },
+    {
+        "pool_id": "0x62e0d3fd804dfbf02d08ee632e9634dba5c00d03",
+        "token0": "USDC",
+        "token1": "AEVO",
+        "token0_reserve": 0.15099872718988386,
+        "token1_reserve": 13400313.029300196
+    },
+    {
+        "pool_id": "0xea4ba4ce14fdd287f380b55419b1c5b6c3f22ab6",
+        "token0": "COMP",
+        "token1": "WETH",
+        "token0_reserve": 494.8256804091772,
+        "token1_reserve": 1.8480811509674993
+    },
+    {
+        "pool_id": "0xb003df4b243f938132e8cadbeb237abc5a889fb4",
+        "token0": "WETH",
+        "token1": "EUL",
+        "token0_reserve": 1.8000000000006837,
+        "token1_reserve": 1841.9759471786324
+    },
+    {
+        "pool_id": "0x1c98562a2fab5af19d8fb3291a36ac3c618835d9",
+        "token0": "Metis",
+        "token1": "WETH",
+        "token0_reserve": 31592.95827226123,
+        "token1_reserve": 318.5194231176992
+    },
+    {
+        "pool_id": "0x5cd0ad98ba6288ed7819246a1ebc0386c32c314b",
+        "token0": "WETH",
+        "token1": "FOOM",
+        "token0_reserve": 1394.0771109398265,
+        "token1_reserve": 13368565252699.139
+    },
+    {
+        "pool_id": "0xf79fc43494ce8a4613cb0b2a67a1b1207fd05d27",
+        "token0": "APE",
+        "token1": "WETH",
+        "token0_reserve": 35.74129539716082,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x0598690ad1daffc3ac47fd6adcaeac547c067e26",
+        "token0": "ENA",
+        "token1": "sENA",
+        "token0_reserve": 9967356.21084966,
+        "token1_reserve": 10047986.844096782
+    },
+    {
+        "pool_id": "0x81d97d927ce883b46a5ecbe696b7189677fdc0cd",
+        "token0": "BADGER",
+        "token1": "EBTC",
+        "token0_reserve": 1155441.3750443803,
+        "token1_reserve": 5.367043241199882
+    },
+    {
+        "pool_id": "0x73a38006d23517a1d383c88929b2014f8835b38b",
+        "token0": "tBTC",
+        "token1": "WBTC",
+        "token0_reserve": 19.239870535224192,
+        "token1_reserve": 23.432155377907833
+    },
+    {
+        "pool_id": "0x4109ab7966c5461439bdb0beda92c92fec767966",
+        "token0": "MMX",
+        "token1": "USDT",
+        "token0_reserve": 3020895.9574937914,
+        "token1_reserve": 0.10000000000011121
+    },
+    {
+        "pool_id": "0x94981f69f7483af3ae218cbfe65233cc3c60d93a",
+        "token0": "RBN",
+        "token1": "WETH",
+        "token0_reserve": 3108.9401301849184,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x9aac67deef711d438ad711ae495b8cb43a6ee1a8",
+        "token0": "MNT",
+        "token1": "USDe",
+        "token0_reserve": 3549281.617566535,
+        "token1_reserve": 1476526.5012425387
+    },
+    {
+        "pool_id": "0x4c83a7f819a5c37d64b4c5a2f8238ea082fa1f4e",
+        "token0": "WETH",
+        "token1": "CRV",
+        "token0_reserve": 0.0,
+        "token1_reserve": 38.251031922021575
+    },
+    {
+        "pool_id": "0x43e7ade137b86798654d8e78c36d5a556a647224",
+        "token0": "wQUIL",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x151ccb92bc1ed5c6d0f9adb5cec4763ceb66ac7f",
+        "token0": "ETH2x-FLI",
+        "token1": "WETH",
+        "token0_reserve": 967.6776702830938,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x9febc984504356225405e26833608b17719c82ae",
+        "token0": "1INCH",
+        "token1": "USDC",
+        "token0_reserve": 5157.228537500184,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xdc212b831b9c47f413218355bffc73830e741446",
+        "token0": "DAY",
+        "token1": "USDC",
+        "token0_reserve": 329669155.99677736,
+        "token1_reserve": 1970441.390053189
+    },
+    {
+        "pool_id": "0x99132b53ab44694eeb372e87bced3929e4ab8456",
+        "token0": "AGIX",
+        "token1": "WETH",
+        "token0_reserve": 910.6046043616898,
+        "token1_reserve": 0.3086743449603781
+    },
+    {
+        "pool_id": "0x16588709ca8f7b84829b43cc1c5cb7e84a321b16",
+        "token0": "PRIME",
+        "token1": "WETH",
+        "token0_reserve": 446.96755923829795,
+        "token1_reserve": 0.013525034481514774
+    },
+    {
+        "pool_id": "0xef9b4fddd861aa2f00ee039c323b7fabd7afe239",
+        "token0": "WBTC",
+        "token1": "EBTC",
+        "token0_reserve": 22.869959293958324,
+        "token1_reserve": 21.273929716045267
+    },
+    {
+        "pool_id": "0x97e7d56a0408570ba1a7852de36350f7713906ec",
+        "token0": "DAI",
+        "token1": "FRAX",
+        "token0_reserve": 57.72504836228024,
+        "token1_reserve": 432.60137181886586
+    },
+    {
+        "pool_id": "0x8bb9cd887dd51c5aa8d7da9e244c94bec035e47c",
+        "token0": "USR",
+        "token1": "USDC",
+        "token0_reserve": 860068.9341260635,
+        "token1_reserve": 436515.8137123651
+    },
+    {
+        "pool_id": "0xe931b03260b2854e77e8da8378a1bc017b13cb97",
+        "token0": "1INCH",
+        "token1": "WETH",
+        "token0_reserve": 5408.909975331706,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x48da0965ab2d2cbf1c17c09cfb5cbe67ad5b1406",
+        "token0": "DAI",
+        "token1": "USDT",
+        "token0_reserve": 44274.18730138359,
+        "token1_reserve": 124560.2626888216
+    },
+    {
+        "pool_id": "0x24ee2c6b9597f035088cda8575e9d5e15a84b9df",
+        "token0": "QNT",
+        "token1": "WETH",
+        "token0_reserve": 43.00824569159522,
+        "token1_reserve": 0.07646382479699751
+    },
+    {
+        "pool_id": "0xfd76be67fff3bac84e3d5444167bbc018f5968b6",
+        "token0": "WETH",
+        "token1": "IMX",
+        "token0_reserve": 0.0,
+        "token1_reserve": 477.2941972099329
+    },
+    {
+        "pool_id": "0x5598931bfbb43eec686fa4b5b92b5152ebadc2f6",
+        "token0": "COMP",
+        "token1": "WETH",
+        "token0_reserve": 61230.97550096165,
+        "token1_reserve": 9.773558455507928
+    },
+    {
+        "pool_id": "0x33676385160f9d8f03a0db2821029882f7c79e93",
+        "token0": "RLB",
+        "token1": "USDT",
+        "token0_reserve": 13519809.388033528,
+        "token1_reserve": 1004908.7401024189
+    },
+    {
+        "pool_id": "0x9b3423373e6e786c9ac367120533abe4ee398373",
+        "token0": "DOG",
+        "token1": "WETH",
+        "token0_reserve": 3132869090.1558146,
+        "token1_reserve": 34.87950325239116
+    },
+    {
+        "pool_id": "0x058d79a4c6eb5b11d0248993ffa1faa168ddd3c0",
+        "token0": "wNXM",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0016247860933506016
+    },
+    {
+        "pool_id": "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
+        "token0": "WETH",
+        "token1": "USDT",
+        "token0_reserve": 0.02636265796745163,
+        "token1_reserve": 19.56817048317545
+    },
+    {
+        "pool_id": "0x2322e5517a3cbc75a3f02d74c96f82dda120d841",
+        "token0": "RLB",
+        "token1": "USDC",
+        "token0_reserve": 10877285.424744785,
+        "token1_reserve": 772246.1070069297
+    },
+    {
+        "pool_id": "0x86e69d1ae728c9cd229f07bbf34e01bf27258354",
+        "token0": "WETH",
+        "token1": "TRU",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x6231e794773e4dc0b1ad79105d850a05d5fc0fcb",
+        "token0": "WETH",
+        "token1": "LOOKS",
+        "token0_reserve": 0.0,
+        "token1_reserve": 13481.08591568234
+    },
+    {
+        "pool_id": "0x4c54ff7f1c424ff5487a32aad0b48b19cbaf087f",
+        "token0": "NEXO",
+        "token1": "WETH",
+        "token0_reserve": 8889.610402878225,
+        "token1_reserve": 3.3613556203730695
+    },
+    {
+        "pool_id": "0x919fa96e88d67499339577fa202345436bcdaf79",
+        "token0": "WETH",
+        "token1": "CRV",
+        "token0_reserve": 0.0,
+        "token1_reserve": 680.6484542142757
+    },
+    {
+        "pool_id": "0x945295d8efe2b63ad5a9239ac5c1b4d28e90bb7c",
+        "token0": "WETH",
+        "token1": "NO",
+        "token0_reserve": 1.5666747447869798,
+        "token1_reserve": 3567.7641783025038
+    },
+    {
+        "pool_id": "0x0da6253560822973185297d5f32ff8fa38243afe",
+        "token0": "WBTC",
+        "token1": "cbBTC",
+        "token0_reserve": 2.8080210054133077,
+        "token1_reserve": 10.115071178047035
+    },
+    {
+        "pool_id": "0x8c54aa2a32a779e6f6fbea568ad85a19e0109c26",
+        "token0": "FEI",
+        "token1": "USDC",
+        "token0_reserve": 100.49499438984603,
+        "token1_reserve": 0.8906082213551764
+    },
+    {
+        "pool_id": "0x4d1eff861316396dd1915f69b49f4c2d7b11590d",
+        "token0": "JASMY",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x8592064903ef23d34e4d5aaaed40abf6d96af186",
+        "token0": "USDC",
+        "token1": "STG",
+        "token0_reserve": 0.3117930924303637,
+        "token1_reserve": 14885.525287043223
+    },
+    {
+        "pool_id": "0xa7600c4fbddb57e44018bee74a5f6b636cb68352",
+        "token0": "CPOOL",
+        "token1": "USDC",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xd31d41dffa3589bb0c0183e46a1eed983a5e5978",
+        "token0": "ATH",
+        "token1": "WETH",
+        "token0_reserve": 29838986.698954187,
+        "token1_reserve": 550.7648684577124
+    },
+    {
+        "pool_id": "0x6cbe9fbfba9dbdc063fe0d6d803d25e7d0ce4a51",
+        "token0": "NMT",
+        "token1": "USDC",
+        "token0_reserve": 1101936.620704148,
+        "token1_reserve": 1074512.8788490237
+    },
+    {
+        "pool_id": "0x5b97b125cf8af96834f2d08c8f1291bd47724939",
+        "token0": "SAND",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xf763bb342eb3d23c02ccb86312422fe0c1c17e94",
+        "token0": "wTAO",
+        "token1": "USDC",
+        "token0_reserve": 0.0,
+        "token1_reserve": 526.0932783094509
+    },
+    {
+        "pool_id": "0xad9ef19e289dcbc9ab27b83d2df53cdeff60f02d",
+        "token0": "SAVM",
+        "token1": "WETH",
+        "token0_reserve": 980043.9591030948,
+        "token1_reserve": 84.72977376629537
+    },
+    {
+        "pool_id": "0x25b96761e765b9ac20db18fa57fa91e3b617ec6f",
+        "token0": "MORPHO",
+        "token1": "WETH",
+        "token0_reserve": 0.00026718905776088763,
+        "token1_reserve": 1.3008742094897694
+    },
+    {
+        "pool_id": "0x465e56cd21ad47d4d4790f17de5e0458f20c3719",
+        "token0": "WETH",
+        "token1": "GALA",
+        "token0_reserve": 0.5215154169644387,
+        "token1_reserve": 740777.2487306937
+    },
+    {
+        "pool_id": "0xe2680fd7cdbb04e9087a647ad4d023ef6c8fb4e2",
+        "token0": "HUNT",
+        "token1": "WETH",
+        "token0_reserve": 7006416.273014877,
+        "token1_reserve": 361.9212750884016
+    },
+    {
+        "pool_id": "0x764510ab1d39cf300e7abe8f5b8977d18f290628",
+        "token0": "SKY",
+        "token1": "WETH",
+        "token0_reserve": 34643157.0587024,
+        "token1_reserve": 276.32468998697925
+    },
+    {
+        "pool_id": "0x824a30f2984f9013f2c8d0a29c0a3cc5fd5c0673",
+        "token0": "BLUR",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x3019d4e366576a88d28b623afaf3ecb9ec9d9580",
+        "token0": "AXS",
+        "token1": "WETH",
+        "token0_reserve": 515.2092468119298,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xcd83055557536eff25fd0eafbc56e74a1b4260b3",
+        "token0": "PERP",
+        "token1": "WETH",
+        "token0_reserve": 1617178.4636880376,
+        "token1_reserve": 209.0921124026727
+    },
+    {
+        "pool_id": "0xbdb04e915b94fbfd6e8552ff7860e59db7d4499a",
+        "token0": "WETH",
+        "token1": "pufETH",
+        "token0_reserve": 0.005305008724368227,
+        "token1_reserve": 0.004590601073482569
+    },
+    {
+        "pool_id": "0x5180545835bd68810fb7e11c7160bb7ea4ae8744",
+        "token0": "FEI",
+        "token1": "USDC",
+        "token0_reserve": 0.7181651286940656,
+        "token1_reserve": 0.28165637684521394
+    },
+    {
+        "pool_id": "0xd1d5a4c0ea98971894772dcd6d2f1dc71083c44e",
+        "token0": "LQTY",
+        "token1": "WETH",
+        "token0_reserve": 100.98548356080639,
+        "token1_reserve": 0.0007255856409920252
+    },
+    {
+        "pool_id": "0xe42318ea3b998e8355a3da364eb9d48ec725eb45",
+        "token0": "WETH",
+        "token1": "RPL",
+        "token0_reserve": 0.051399222198770134,
+        "token1_reserve": 1354.0022293087773
+    },
+    {
+        "pool_id": "0x6ac6b053a2858bea8ad758db680198c16e523184",
+        "token0": "ID",
+        "token1": "USDC",
+        "token0_reserve": 6669293.431476373,
+        "token1_reserve": 5512.221854948127
+    },
+    {
+        "pool_id": "0x7c706586679af2ba6d1a9fc2da9c6af59883fdd3",
+        "token0": "WETH",
+        "token1": "SPX",
+        "token0_reserve": 4.1408456911073985,
+        "token1_reserve": 18079.054590264397
+    },
+    {
+        "pool_id": "0xcd8286b48936cdac20518247dbd310ab681a9fbf",
+        "token0": "FXS",
+        "token1": "WETH",
+        "token0_reserve": 2106.7806650401953,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x2a9d2ba41aba912316d16742f259412b681898db",
+        "token0": "XEN",
+        "token1": "WETH",
+        "token0_reserve": 11038015.754952675,
+        "token1_reserve": 0.00037051848114825765
+    },
+    {
+        "pool_id": "0xfe0df74636bc25c7f2400f22fe7dae32d39443d2",
+        "token0": "RBN",
+        "token1": "USDC",
+        "token0_reserve": 3114580.1853778707,
+        "token1_reserve": 312627.26464372774
+    },
+    {
+        "pool_id": "0xe05e653453f733786f2dabae0ffa1e96cfcc4b25",
+        "token0": "HEX",
+        "token1": "USDC",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x84383fb05f610222430f69727aa638f8fdbf5cc1",
+        "token0": "MM",
+        "token1": "USDC",
+        "token0_reserve": 264.4308843177423,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x7b3ed3a3444144ff526554d5f4aa463d1759f51a",
+        "token0": "WETH",
+        "token1": "AXGT",
+        "token0_reserve": 213.55749026613546,
+        "token1_reserve": 2902776.385565916
+    },
+    {
+        "pool_id": "0x16b70f44719b227278a2dc1122e8106cc929ecd1",
+        "token0": "WETH",
+        "token1": "LUNA",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xb9c4a5522a2f8ba9e2ff7063df8c02ed443337a3",
+        "token0": "WETH",
+        "token1": "ENS",
+        "token0_reserve": 0.6828867009281437,
+        "token1_reserve": 117.7716816603328
+    },
+    {
+        "pool_id": "0x79a6683d82f25535ff3fd2753e03e0961060e882",
+        "token0": "Neiro",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xf1b63cd9d80f922514c04b0fd0a30373316dd75b",
+        "token0": "OHM",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x7138eae57e8a214f7297e5e67bb6e183df3572d5",
+        "token0": "DINERO",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x840deeef2f115cf50da625f7368c24af6fe74410",
+        "token0": "cbETH",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x2837809fd68e4a4104af76bbec5b622b6146b2cb",
+        "token0": "WETH",
+        "token1": "RAIL",
+        "token0_reserve": 224.42132544595296,
+        "token1_reserve": 1269042.8845473153
+    },
+    {
+        "pool_id": "0x8faf35b504cb42d84eaf304a8b956d6c8bc096a9",
+        "token0": "VANA",
+        "token1": "USDC",
+        "token0_reserve": 79890.21699468844,
+        "token1_reserve": 1554867.972749377
+    },
+    {
+        "pool_id": "0xaf585783337434fee47c9abfbd737156f9a84dd1",
+        "token0": "SHIBA2",
+        "token1": "WETH",
+        "token0_reserve": 57674783.83027443,
+        "token1_reserve": 558.5029261327799
+    },
+    {
+        "pool_id": "0xc593fe9193b745447e86b45ea0bf62565ee030cc",
+        "token0": "WETH",
+        "token1": "ANYONE",
+        "token0_reserve": 466.89395885493104,
+        "token1_reserve": 2586773.1305334563
+    },
+    {
+        "pool_id": "0xf8a95b2409c27678a6d18d950c5d913d5c38ab03",
+        "token0": "GALA",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0xdd2e0d86a45e4ef9bd490c2809e6405720cc357c",
+        "token0": "PYUSD",
+        "token1": "USDT",
+        "token0_reserve": 939469.976202257,
+        "token1_reserve": 1453575.980934719
+    },
+    {
+        "pool_id": "0x508acdc358be2ed126b1441f0cff853dec49d40f",
+        "token0": "ACX",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x2cad29e9640b9bcfb1d8d25cf3e4bd05f55cce70",
+        "token0": "OX",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x526cd4f72f2cc54d6a02a7fefc84753a826a5737",
+        "token0": "USN",
+        "token1": "USDT",
+        "token0_reserve": 2153163.832601883,
+        "token1_reserve": 264549.76481034857
+    },
+    {
+        "pool_id": "0x1385fc1fe0418ea0b4fcf7adc61fc7535ab7f80d",
+        "token0": "DEAI",
+        "token1": "WETH",
+        "token0_reserve": 8072406.287510578,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x867b321132b18b5bf3775c0d9040d1872979422e",
+        "token0": "sUSDe",
+        "token1": "USDT",
+        "token0_reserve": 0.0,
+        "token1_reserve": 1.5757509917071253
+    },
+    {
+        "pool_id": "0xc02d0fa00c0bec48186026c71da2e54ebf680139",
+        "token0": "wNXM",
+        "token1": "WETH",
+        "token0_reserve": 2435.6423034629615,
+        "token1_reserve": 28.523805428258648
+    },
+    {
+        "pool_id": "0xe0cfa17aa9b8f930fd936633c0252d5cb745c2c3",
+        "token0": "DYDX",
+        "token1": "WETH",
+        "token0_reserve": 0.0,
+        "token1_reserve": 0.0
+    },
+    {
+        "pool_id": "0x6c063a6e8cd45869b5eb75291e65a3de298f3aa8",
+        "token0": "WETH",
+        "token1": "INJ",
+        "token0_reserve": 2.5075958866696175,
+        "token1_reserve": 318.44688107684345
+    },
+    {
+        "pool_id": "0x094a28b22e1b4218d590ea6fa916b3c5e670ba55",
+        "token0": "USDC",
+        "token1": "UOS",
+        "token0_reserve": 0.0,
+        "token1_reserve": 1249999.9999987937
+    }
+]
