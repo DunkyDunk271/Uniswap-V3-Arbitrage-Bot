@@ -1,3 +1,4 @@
+from MempoolConstruction import *
 import requests
 import json
 import math
@@ -12,16 +13,21 @@ OUTPUT_FILE = "data/uniswap_v3_reserves.json"
 
 
 def process_pools():
+    PoolList = []
     start_time = time.time()
     pools = fetch_pools()
     results = []
 
     for pool in pools:
         pool_id = pool["id"]
+        fee_tier = float(pool["feeTier"])
         token0_symbol = pool["token0"]["symbol"]
+        token0_id = pool["token0"]["id"]
         token1_symbol = pool["token1"]["symbol"]
+        token1_id = pool["token0"]["id"]
         token0_decimals = int(pool["token0"]["decimals"])
         token1_decimals = int(pool["token1"]["decimals"])
+        positions = []
 
         sqrtPriceX96, tick = fetch_slot0(pool_id)
 
@@ -46,30 +52,39 @@ def process_pools():
         data = response.json()
 
         if "data" in data and "positions" in data["data"]:
-            total_x = 0
-            total_y = 0
+            token0_reserve = 0
+            token1_reserve = 0
 
-            for pos in data["data"]["positions"]:
-                liquidity = int(pos["liquidity"])
-                tickLower = int(pos["tickLower"]["tickIdx"])
-                tickUpper = int(pos["tickUpper"]["tickIdx"])
-
+            for position in data["data"]["positions"]:
+                pos = {}
+                liquidity = int(position["liquidity"])
+                tickLower = int(position["tickLower"]["tickIdx"])
+                tickUpper = int(position["tickUpper"]["tickIdx"])
+            
                 x, y = compute_token_reserves(liquidity, sqrtPriceX96, tickLower, tickUpper)
-                total_x += x
-                total_y += y
+                token0_reserve += x
+                token1_reserve += y
+                pos["tickLower"] = tickLower
+                pos["tickUpper"] = tickUpper
+                pos["liquidity"] = liquidity
+                pos["token0_reserve"] = x
+                pos["token1_reserve"] = y
+                positions.append(pos)
 
-            total_x /= 10 ** token0_decimals
-            total_y /= 10 ** token1_decimals
+            token0_reserve /= 10 ** token0_decimals
+            token1_reserve /= 10 ** token1_decimals
 
             results.append({
                 "pool_id": pool_id,
                 "token0": token0_symbol,
                 "token1": token1_symbol,
-                "token0_reserve": total_x,
-                "token1_reserve": total_y
+                "token0_reserve": token0_reserve,
+                "token1_reserve": token1_reserve
             })
 
-            print(f"Pool: {token0_symbol}/{token1_symbol}, Reserves: {total_x} {token0_symbol}, {total_y} {token1_symbol}")
+            print(f"Pool: {token0_symbol}/{token1_symbol}, Reserves: {token0_reserve} {token0_symbol}, {token1_reserve} {token1_symbol}")
+        PoolList.append(Pool(pool_id, fee_tier, positions, token0_symbol, token0_id, token0_reserve, token1_symbol, token1_id, token1_reserve))
+
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(results, f, indent=4)
@@ -84,6 +99,7 @@ def fetch_pools():
     {
       pools(first: 10, orderBy: volumeUSD, orderDirection: desc) {
         id
+        feeTier
         token0 {
           symbol
           id

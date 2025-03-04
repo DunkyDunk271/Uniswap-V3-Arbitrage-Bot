@@ -2,6 +2,7 @@
     "data": {
         "pools": [
             {
+                "feeTier": "500",
                 "id": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
                 "token0": {
                     "decimals": "6",
@@ -15,6 +16,7 @@
                 }
             },
             {
+                "feeTier": "500",
                 "id": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
                 "token0": {
                     "decimals": "18",
@@ -28,6 +30,7 @@
                 }
             },
             {
+                "feeTier": "100",
                 "id": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
                 "token0": {
                     "decimals": "6",
@@ -41,6 +44,7 @@
                 }
             },
             {
+                "feeTier": "500",
                 "id": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
                 "token0": {
                     "decimals": "8",
@@ -54,6 +58,7 @@
                 }
             },
             {
+                "feeTier": "3000",
                 "id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
                 "token0": {
                     "decimals": "6",
@@ -67,6 +72,7 @@
                 }
             },
             {
+                "feeTier": "100",
                 "id": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
                 "token0": {
                     "decimals": "18",
@@ -80,6 +86,7 @@
                 }
             },
             {
+                "feeTier": "3000",
                 "id": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
                 "token0": {
                     "decimals": "18",
@@ -93,6 +100,7 @@
                 }
             },
             {
+                "feeTier": "3000",
                 "id": "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed",
                 "token0": {
                     "decimals": "8",
@@ -106,6 +114,7 @@
                 }
             },
             {
+                "feeTier": "500",
                 "id": "0x60594a405d53811d3bc4766596efd80fd545a270",
                 "token0": {
                     "decimals": "18",
@@ -119,6 +128,7 @@
                 }
             },
             {
+                "feeTier": "100",
                 "id": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
                 "token0": {
                     "decimals": "6",

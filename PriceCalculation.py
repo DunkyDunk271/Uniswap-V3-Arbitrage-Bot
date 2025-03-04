@@ -1,47 +1,16 @@
 import math
 import struct
 
-
-def GetAmountReceive(A_supply, B_supply, AmountAtoB):
-    #Trade estimation with constant fee - plan use BlockNative fee estimator for dynamic fee
-    AmountReceive = (B_supply - (A_supply * B_supply / (A_supply + AmountAtoB))) * 0.997
-    return AmountReceive
+def GetAmountReceive(token_in, amount_in, Pool):
+    #Trade estimation without consideration of gas fee, only consider Uniswap fee
+    pass
+    
 
 def ReserveEstimation(PendingTransactions, LiquidityPoolIDs, Uni_USDT_Total_Supply, Uni_WETH_Total_Supply, Sushi_USDT_Total_Supply, Sushi_WETH_Total_Supply):
-    for Transaction in PendingTransactions:
-        if Transaction.toAddress == LiquidityPoolIDs[0]:
-            #Uniswap WETH to USDT
-            Uni_USDT_Total_Supply -= GetAmountReceive(Uni_WETH_Total_Supply, Uni_USDT_Total_Supply, float(int(Transaction.value, 16)))
-            Uni_WETH_Total_Supply += float(int(Transaction.value, 16))
-        elif Transaction.toAddress == LiquidityPoolIDs[1]:
-            #Uniswap USDT to WETH
-            Uni_USDT_Total_Supply += float(int(Transaction.value, 16))
-            Uni_WETH_Total_Supply -= GetAmountReceive(Uni_USDT_Total_Supply, Uni_WETH_Total_Supply, float(int(Transaction.value, 16)))
-        elif Transaction.toAddress == LiquidityPoolIDs[2]:
-            #Sushiswap WETH to USDT
-            Sushi_USDT_Total_Supply -= GetAmountReceive(Sushi_WETH_Total_Supply, Sushi_USDT_Total_Supply, float(int(Transaction.value, 16)))
-            Sushi_WETH_Total_Supply += float(int(Transaction.value, 16))
-        elif Transaction.toAddress == LiquidityPoolIDs[3]:
-            #Sushiswap USDT to WETH
-            Sushi_USDT_Total_Supply += float(int(Transaction.value, 16))
-            Sushi_WETH_Total_Supply -= GetAmountReceive(Sushi_USDT_Total_Supply, Sushi_WETH_Total_Supply, float(int(Transaction.value, 16)))
-
-    return Sushi_WETH_Total_Supply, Sushi_USDT_Total_Supply, Uni_WETH_Total_Supply, Uni_USDT_Total_Supply
+    pass
 
 def ArbitrageOpportunitySpot(Sushi_WETH_Total_Supply, Sushi_USDT_Total_Supply, Uni_WETH_Total_Supply, Uni_USDT_Total_Supply):
-    Sushi_k = Sushi_WETH_Total_Supply * Sushi_USDT_Total_Supply
-    Uni_k = Uni_WETH_Total_Supply * Uni_USDT_Total_Supply
-    Sushi_WETH_to_USDT_rate = Sushi_USDT_Total_Supply / Sushi_WETH_Total_Supply
-    Sushi_USDT_to_WETH_rate = Sushi_WETH_Total_Supply / Sushi_USDT_Total_Supply
-    Uni_WETH_to_USDT_rate = Uni_USDT_Total_Supply / Uni_WETH_Total_Supply
-    Uni_USDT_to_WETH_rate = Uni_WETH_Total_Supply / Uni_USDT_Total_Supply
-
-    if Uni_WETH_to_USDT_rate > Sushi_WETH_to_USDT_rate:
-        return "UniWETH-USDT/SushiUSDT-WETH"
-    elif Uni_USDT_to_WETH_rate > Sushi_USDT_to_WETH_rate:
-        return "UniUSDT-WETH/SushiWETH-USDT"
-    else:
-        return "No Arbitrage Opportunity"
+    pass
 
 def OptimalArbitrageAmount(ReserveInA, ReserveOutA, ReserveInB, ReserveOutB):
         #Optimal Arbitrage Strategy with constant fee
