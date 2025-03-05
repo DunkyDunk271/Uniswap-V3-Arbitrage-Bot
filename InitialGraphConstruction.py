@@ -97,7 +97,7 @@ def process_pools():
 def fetch_pools():
     query = """
     {
-      pools(first: 10, orderBy: volumeUSD, orderDirection: desc) {
+      pools(first: 20, orderBy: volumeUSD, orderDirection: desc) {
         id
         feeTier
         token0 {

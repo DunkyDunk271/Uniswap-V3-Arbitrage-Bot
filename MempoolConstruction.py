@@ -1,5 +1,5 @@
 class Pool:
-    def __init__(self, id, fee_tier, positions, token0_symbol, token0_id, token0_reserve, token1_symbol, token1_id, token1_reserve):
+    def __init__(self, id, fee_tier, positions, token0_symbol, token0_id, token1_symbol, token1_id, token0_reserve = 0, token1_reserve = 0):
         self.id = id
         self.fee_tier = fee_tier
         self.positions = positions
@@ -25,6 +25,9 @@ class Pool:
             Ticks.append(tickUpper)
         Ticks = sorted(Ticks)
         return Ticks
+    
+    def get_pool_id(self):
+        return self.id
 
 
 class PendingTransaction:
