@@ -1,3 +1,4 @@
+from MempoolConstruction import *
 import requests
 import json
 import math
@@ -5,19 +6,28 @@ import time
 
 GRAPHQL_URL = "https://gateway.thegraph.com/api/8eb05dafcde7a82f664adace07cb1437/subgraphs/id/5zvR82QoaXYFyDEKLZ9t6v9adgnptxYpKpSbxtgVENFV"
 QUICKNODE_RPC = "https://yolo-aged-darkness.quiknode.pro/401a21cac95f67e72bb1478cf94b4ff0763535cc/"
-OUTPUT_FILE = "uniswap_v3_reserves.json"
+INFURA_RPC = "https://mainnet.infura.io/v3/655599352d27480195e2cf5c52581754"
+
+CURRENT_RPC = INFURA_RPC
+OUTPUT_FILE = "data/uniswap_v3_reserves.json"
+
 
 def process_pools():
+    PoolList = []
     start_time = time.time()
     pools = fetch_pools()
     results = []
 
     for pool in pools:
         pool_id = pool["id"]
+        fee_tier = float(pool["feeTier"])
         token0_symbol = pool["token0"]["symbol"]
+        token0_id = pool["token0"]["id"]
         token1_symbol = pool["token1"]["symbol"]
+        token1_id = pool["token0"]["id"]
         token0_decimals = int(pool["token0"]["decimals"])
         token1_decimals = int(pool["token1"]["decimals"])
+        positions = []
 
         sqrtPriceX96, tick = fetch_slot0(pool_id)
 
@@ -42,30 +52,42 @@ def process_pools():
         data = response.json()
 
         if "data" in data and "positions" in data["data"]:
-            total_x = 0
-            total_y = 0
+            token0_reserve = 0
+            token1_reserve = 0
 
-            for pos in data["data"]["positions"]:
-                liquidity = int(pos["liquidity"])
-                tickLower = int(pos["tickLower"]["tickIdx"])
-                tickUpper = int(pos["tickUpper"]["tickIdx"])
-
+            for position in data["data"]["positions"]:
+                pos = {}
+                liquidity = int(position["liquidity"])
+                tickLower = int(position["tickLower"]["tickIdx"])
+                tickUpper = int(position["tickUpper"]["tickIdx"])
+            
                 x, y = compute_token_reserves(liquidity, sqrtPriceX96, tickLower, tickUpper)
-                total_x += x
-                total_y += y
+                token0_reserve += x
+                token1_reserve += y
+                pos["tickLower"] = tickLower
+                pos["tickUpper"] = tickUpper
+                pos["liquidity"] = liquidity
+                pos["token0_reserve"] = x
+                pos["token1_reserve"] = y
+                positions.append(pos)
 
-            total_x /= 10 ** token0_decimals
-            total_y /= 10 ** token1_decimals
+            token0_reserve /= 10 ** token0_decimals
+            token1_reserve /= 10 ** token1_decimals
 
             results.append({
                 "pool_id": pool_id,
                 "token0": token0_symbol,
                 "token1": token1_symbol,
-                "token0_reserve": total_x,
-                "token1_reserve": total_y
+                "token0_reserve": token0_reserve,
+                "token1_reserve": token1_reserve
             })
 
-            print(f"Processed pool: {token0_symbol}/{token1_symbol}, Reserves: {total_x} {token0_symbol}, {total_y} {token1_symbol}")
+            print(f"Pool: {token0_symbol}/{token1_symbol}, Reserves: {token0_reserve} {token0_symbol}, {token1_reserve} {token1_symbol}")
+        PoolList.append(Pool(pool_id, fee_tier, positions, token0_symbol, token0_id, token1_symbol, token1_id))
+
+    for Pool in PoolList:
+        sqrtPriceX96, tick = fetch_slot0(Pool.get_pool_id())
+        
 
     with open(OUTPUT_FILE, "w") as f:
         json.dump(results, f, indent=4)
@@ -78,8 +100,9 @@ def process_pools():
 def fetch_pools():
     query = """
     {
-      pools(first: 20, orderBy: totalValueLockedUSD, orderDirection: desc) {
+      pools(first: 20, orderBy: volumeUSD, orderDirection: desc) {
         id
+        feeTier
         token0 {
           symbol
           id
@@ -109,7 +132,6 @@ def fetch_pools():
 #def fetch_position(pool_id):
 
 
-
 def fetch_slot0(pool_address):
     SLOT0_METHOD_ID = "0x3850c7bd"
     
@@ -126,7 +148,7 @@ def fetch_slot0(pool_address):
         ]
     }
 
-    response = requests.post(QUICKNODE_RPC, json=payload)
+    response = requests.post(CURRENT_RPC, json=payload)
     data = response.json()
 
     if "result" in data:

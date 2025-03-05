@@ -1,6 +1,7 @@
 from InitialGraphConstruction import *
 from MempoolSniper import *
 from PriceCalculation import *
+from MempoolConstruction import *
 import json
 import websockets
 import asyncio
@@ -17,9 +18,29 @@ UNISWAP_V3_ROUTER = "0xe592427a0aece92de3edee1f18e0157c05861564"
 #UNISWAP_V3_ROUTER = "0xb41b78Ce3D1BDEDE48A3d303eD2564F6d1F6fff0"
 
 async def main():
-    process_pools()
+    PoolList = process_pools()
 
-    asyncio.run(ReadMempool())
+    async with websockets.connect(CURRENT_WSS, ping_interval = 30) as websocket:
+        subscribe_payload = {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_subscribe",
+            "params": ["newPendingTransactions"]
+        }
+
+        await websocket.send(json.dumps(subscribe_payload))
+        response = await websocket.recv()
+        print("Subscription response:", response)
+    
+        while True:
+            message = await websocket.recv()
+            data = json.loads(message)
+            swap_transaction = CheckSwapTransaction(data)
+            
+            if swap_transaction == None:
+                continue
+            
+
 
     '''
 

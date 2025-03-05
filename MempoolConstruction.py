@@ -1,10 +1,34 @@
-class Pools:
-    def __init__(self, id, token0TotalSupply, token1TotalSupply, token0ID, token1ID):
+class Pool:
+    def __init__(self, id, fee_tier, positions, token0_symbol, token0_id, token1_symbol, token1_id, token0_reserve = 0, token1_reserve = 0):
         self.id = id
-        self.token0TotalSupply = token0TotalSupply
-        self.token1TotalSupply = token1TotalSupply
-        self.token0ID = token0ID
-        self.token1ID = token1ID
+        self.fee_tier = fee_tier
+        self.positions = positions
+        #self.Pa = Pa
+        #self.Pb = Pb
+        self.token0_symbol = token0_symbol
+        self.token0_id = token0_id
+        self.token0_reserve = token0_reserve
+        self.token1_symbol = token1_symbol
+        self.token1_id = token1_id
+        self.token1_reserve = token1_reserve
+        
+        self.Ticks = self.PositionsToTicksList()
+        self.fee_rate = (self.fee_tier / 1000000)
+        self.estimated_slippage = []
+
+    def PositionsToTicksList(self):
+        Ticks = []
+        for position in self.positions:
+            tickLower = int(position["tickLower"])
+            tickUpper = int(position["tickUpper"])
+            Ticks.append(tickLower)
+            Ticks.append(tickUpper)
+        Ticks = sorted(Ticks)
+        return Ticks
+    
+    def get_pool_id(self):
+        return self.id
+
 
 class PendingTransaction:
     def __init__(self, hash, nonce, blockHash, blockNumber, transactionIndex, fromAddress, toAddress, value, gasPrice, gas):

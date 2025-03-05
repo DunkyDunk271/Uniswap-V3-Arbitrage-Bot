@@ -15,7 +15,8 @@ CURRENT_RPC, CURRENT_WSS = INFURA_RPC, INFURA_WSS
 UNISWAP_V3_ROUTER = "0xe592427a0aece92de3edee1f18e0157c05861564"
 #UNISWAP_V3_ROUTER = "0xb41b78Ce3D1BDEDE48A3d303eD2564F6d1F6fff0"
 
-async def ReadMempool():
+def CheckSwapTransaction(data):
+    '''
     async with websockets.connect(CURRENT_WSS) as websocket:
         subscribe_payload = {
             "jsonrpc": "2.0",
@@ -31,37 +32,17 @@ async def ReadMempool():
         while True:
             message = await websocket.recv()
             data = json.loads(message)
-
-            if "params" in data and "result" in data["params"]:
-                tx_hash = data["params"]["result"]
-                tx_details = fetch_transaction_details(tx_hash)
-                if tx_details == None:
-                    continue
-
-                #blockHash = tx_details["blockHash"]
-                #blockNumber = tx_details["blockNumber"]
-                #fromAddress = tx_details["from"]
-                #gas = tx_details["gas"]
-                #gasPrice = tx_details["gasPrice"]
-                #axFeePerGas = tx_details["maxFeePerGas"]
-                #maxPriorityFeePerGas = tx_details["maxPriorityFeePerGas"]
-                #hash = tx_details["hash"]
-                #input = tx_details["input"]
-                #nonce = tx_details["nonce"]
-                toAddress = tx_details['to']
-                #transactionIndex = tx_details["transactionIndex"]
-                #value = tx_details["value"]
-                #type = tx_details["type"]
-                #accessList = tx_details["accessList"]
-                #chainId = tx_details["chainId"]
-                #v = tx_details["v"]
-                #r = tx_details["r"]
-                #s = tx_details["s"]
-                #yParity = tx_details["yParity"]
-                if toAddress == UNISWAP_V3_ROUTER:
-                    print("New Uniswap V3 swap:", json.dumps(tx_details, indent=4))
-
-                return tx_details
+    '''
+            
+    if "params" in data and "result" in data["params"]:
+        tx_hash = data["params"]["result"]
+        tx_details = fetch_transaction_details(tx_hash)
+        if tx_details == None:
+            return None
+        toAddress = tx_details['to']
+        if toAddress == UNISWAP_V3_ROUTER:
+            print("New Uniswap V3 swap:", json.dumps(tx_details, indent=4))
+            return tx_details
 
                     
 
