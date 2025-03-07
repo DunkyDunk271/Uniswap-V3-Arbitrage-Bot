@@ -87,6 +87,9 @@ def process_pools():
 
     for Pool in PoolList:
         sqrtPriceX96, tick = fetch_slot0(Pool.get_pool_id())
+        if sqrtPriceX96 is None or tick is None:
+            continue
+        
         
 
     with open(OUTPUT_FILE, "w") as f:
