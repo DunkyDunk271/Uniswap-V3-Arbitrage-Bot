@@ -90,8 +90,7 @@ def process_pools():
         if sqrtPriceX96 is None or tick is None:
             continue
         
-        
-
+    
     with open(OUTPUT_FILE, "w") as f:
         json.dump(results, f, indent=4)
 
