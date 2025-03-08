@@ -52,8 +52,6 @@ def process_pools():
         data = response.json()
 
         if "data" in data and "positions" in data["data"]:
-            token0_reserve = 0
-            token1_reserve = 0
 
             for position in data["data"]["positions"]:
                 pos = {}
@@ -61,20 +59,44 @@ def process_pools():
                 tickLower = int(position["tickLower"]["tickIdx"])
                 tickUpper = int(position["tickUpper"]["tickIdx"])
             
-                x, y = compute_token_reserves(liquidity, sqrtPriceX96, tickLower, tickUpper)
-                token0_reserve += x
-                token1_reserve += y
                 pos["tickLower"] = tickLower
                 pos["tickUpper"] = tickUpper
                 pos["liquidity"] = liquidity
-                pos["token0_reserve"] = x
-                pos["token1_reserve"] = y
+                pos["token0_reserve"] = 0
+                pos["token1_reserve"] = 0
                 positions.append(pos)
 
-            token0_reserve /= 10 ** token0_decimals
-            token1_reserve /= 10 ** token1_decimals
+            
+        print(f"Pool: {token0_symbol}/{token1_symbol}, Reserves: {token0_reserve} {token0_symbol}, {token1_reserve} {token1_symbol}")
+        PoolList.append(Pool(pool_id, fee_tier, positions, token0_symbol, token0_id,token0_decimals, token1_symbol, token1_id, token1_decimals))
+    end_time = time.time()
+    print(f"The Graph Pool Info Query execution time: {end_time - start_time:.2f} seconds")
 
-            results.append({
+    start_time = time.time()
+    for Pool in PoolList:
+        sqrtPriceX96, tick = fetch_slot0(Pool.get_pool_id())
+        if sqrtPriceX96 is None or tick is None:
+            continue
+
+        token0_reserve = 0
+        token1_reserve = 0
+        for position in Pool.get_positions():
+            tickLower = int(position["tickLower"])
+            tickUpper = int(position["tickUpper"])
+            liquidity = int(position["liquidity"])
+            x, y = compute_token_reserves(liquidity, sqrtPriceX96, tickLower, tickUpper)
+            token0_reserve += x
+            token1_reserve += y
+            position["token0_reserve"] = x
+            position["token1_reserve"] = y
+
+        token0_reserve /= 10 ** token0_decimals
+        token1_reserve /= 10 ** token1_decimals
+
+        Pool.token0_reserve = token0_reserve
+        Pool.token1_reserve = token1_reserve
+
+        results.append({
                 "pool_id": pool_id,
                 "token0": token0_symbol,
                 "token1": token1_symbol,
@@ -82,21 +104,14 @@ def process_pools():
                 "token1_reserve": token1_reserve
             })
 
-            print(f"Pool: {token0_symbol}/{token1_symbol}, Reserves: {token0_reserve} {token0_symbol}, {token1_reserve} {token1_symbol}")
-        PoolList.append(Pool(pool_id, fee_tier, positions, token0_symbol, token0_id, token1_symbol, token1_id))
 
-    for Pool in PoolList:
-        sqrtPriceX96, tick = fetch_slot0(Pool.get_pool_id())
-        if sqrtPriceX96 is None or tick is None:
-            continue
-        
-    
     with open(OUTPUT_FILE, "w") as f:
         json.dump(results, f, indent=4)
 
     end_time = time.time()
-    print(f"Total execution time: {end_time - start_time:.2f} seconds")
+    print(f"Websocket info execution time: {end_time - start_time:.2f} seconds")
     print(f"Results saved to {OUTPUT_FILE}")
+
 
 
 def fetch_pools():
