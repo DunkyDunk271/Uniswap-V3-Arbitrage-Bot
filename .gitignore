@@ -1,0 +1,4 @@
+myenv/
+test/
+.conda/
+__pycache__/
