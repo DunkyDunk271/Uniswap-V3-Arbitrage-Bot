@@ -4,6 +4,7 @@ class Pool:
         self.fee_tier = fee_tier
         self.positions = positions
         #self.Pa = Pa
+        
         #self.Pb = Pb
         self.token0_symbol = token0_symbol
         self.token0_id = token0_id

@@ -10,9 +10,9 @@ QUICKNODE_RPC = "https://yolo-aged-darkness.quiknode.pro/401a21cac95f67e72bb1478
 QUICKNODE_WSS = "wss://yolo-aged-darkness.quiknode.pro/401a21cac95f67e72bb1478cf94b4ff0763535cc"
 INFURA_WSS = "wss://mainnet.infura.io/ws/v3/655599352d27480195e2cf5c52581754"
 INFURA_RPC = "https://mainnet.infura.io/v3/655599352d27480195e2cf5c52581754"
-
 CURRENT_RPC, CURRENT_WSS = INFURA_RPC, INFURA_WSS
 UNISWAP_V3_ROUTER = "0xe592427a0aece92de3edee1f18e0157c05861564"
+UNISWAP_V2_ROUTER = "0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
 #UNISWAP_V3_ROUTER = "0xb41b78Ce3D1BDEDE48A3d303eD2564F6d1F6fff0"
 
 def CheckSwapTransaction(data):
@@ -40,8 +40,8 @@ def CheckSwapTransaction(data):
         if tx_details == None:
             return None
         toAddress = tx_details['to']
-        if toAddress == UNISWAP_V3_ROUTER:
-            print("New Uniswap V3 swap:", json.dumps(tx_details, indent=4))
+        if toAddress == UNISWAP_V2_ROUTER:
+            print("New Uniswap V2 swap:", json.dumps(tx_details, indent=4))
             return tx_details
 
                     
