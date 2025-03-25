@@ -1,1 +1,142 @@
-[]
+[
+    {
+        "pool_id": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+        "token0": "USDC",
+        "token1": "WETH",
+        "token0_reserve": 2806766285523.3994,
+        "token1_reserve": 1.3855661026678672e+21
+    },
+    {
+        "pool_id": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+        "token0": "WETH",
+        "token1": "USDT",
+        "token0_reserve": 1.0223918279482808e+19,
+        "token1_reserve": 19481696323.512096
+    },
+    {
+        "pool_id": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+        "token0": "USDC",
+        "token1": "USDT",
+        "token0_reserve": 9811304142755.55,
+        "token1_reserve": 9814056774308.498
+    },
+    {
+        "pool_id": "0x4585fe77225b41b697c938b018e2ac67ac5a20c0",
+        "token0": "WBTC",
+        "token1": "WETH",
+        "token0_reserve": 258679542.31151205,
+        "token1_reserve": 1.1133290527381216e+20
+    },
+    {
+        "pool_id": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+        "token0": "USDC",
+        "token1": "WETH",
+        "token0_reserve": 1421747606307.4124,
+        "token1_reserve": 6.76823247089368e+20
+    },
+    {
+        "pool_id": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+        "token0": "WETH",
+        "token1": "USDT",
+        "token0_reserve": 43733521414409.85,
+        "token1_reserve": 86594.18938243896
+    },
+    {
+        "pool_id": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+        "token0": "WETH",
+        "token1": "USDT",
+        "token0_reserve": 1.4492206804936745e+21,
+        "token1_reserve": 3156641807992.8457
+    },
+    {
+        "pool_id": "0xcbcdf9626bc03e24f779434178a73a0b4bad62ed",
+        "token0": "WBTC",
+        "token1": "WETH",
+        "token0_reserve": 618033872.012264,
+        "token1_reserve": 2.4780590012832924e+20
+    },
+    {
+        "pool_id": "0x60594a405d53811d3bc4766596efd80fd545a270",
+        "token0": "DAI",
+        "token1": "WETH",
+        "token0_reserve": 3.0355617093896603e+21,
+        "token1_reserve": 1.5977730527930127e+18
+    },
+    {
+        "pool_id": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+        "token0": "USDC",
+        "token1": "WETH",
+        "token0_reserve": 851025375.2781717,
+        "token1_reserve": 4.2979782543593555e+17
+    },
+    {
+        "pool_id": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa",
+        "token0": "wstETH",
+        "token1": "WETH",
+        "token0_reserve": 1.3789755791588091e+21,
+        "token1_reserve": 1.6508316891685131e+21
+    },
+    {
+        "pool_id": "0x5777d92f208679db4b9778590fa3cab3ac9e2168",
+        "token0": "DAI",
+        "token1": "USDC",
+        "token0_reserve": 3.1016751885819582e+25,
+        "token1_reserve": 31018384284754.934
+    },
+    {
+        "pool_id": "0x99ac8ca7087fa4a2a1fb6357269965a2014abc35",
+        "token0": "WBTC",
+        "token1": "USDC",
+        "token0_reserve": 20426512350.855064,
+        "token1_reserve": 19825977390774.703
+    },
+    {
+        "pool_id": "0x7858e59e0c01ea06df3af3d20ac7b0003275d4bf",
+        "token0": "USDC",
+        "token1": "USDT",
+        "token0_reserve": 2284471218722.081,
+        "token1_reserve": 2285577777452.89
+    },
+    {
+        "pool_id": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8",
+        "token0": "DAI",
+        "token1": "WETH",
+        "token0_reserve": 2.776964596164858e+23,
+        "token1_reserve": 1.3034833708550768e+20
+    },
+    {
+        "pool_id": "0x435664008f38b0650fbc1c9fc971d0a3bc2f1e47",
+        "token0": "USDe",
+        "token1": "USDT",
+        "token0_reserve": 6.795542455443493e+23,
+        "token1_reserve": 679594409306.0385
+    },
+    {
+        "pool_id": "0xa6cc3c2531fdaa6ae1a3ca84c2855806728693e8",
+        "token0": "LINK",
+        "token1": "WETH",
+        "token0_reserve": 1.281393374758864e+23,
+        "token1_reserve": 8.795600239954366e+20
+    },
+    {
+        "pool_id": "0xe8f7c89c5efa061e340f2d2f206ec78fd8f7e124",
+        "token0": "WBTC",
+        "token1": "cbBTC",
+        "token0_reserve": 4915358019.376182,
+        "token1_reserve": 4907554974.575681
+    },
+    {
+        "pool_id": "0x1d42064fc4beb5f8aaf85f4617ae8b3b5b8bd801",
+        "token0": "UNI",
+        "token1": "WETH",
+        "token0_reserve": 9.353398053106005e+22,
+        "token1_reserve": 3.347993902536181e+20
+    },
+    {
+        "pool_id": "0x9a772018fbd77fcd2d25657e5c547baff3fd7d16",
+        "token0": "WBTC",
+        "token1": "USDC",
+        "token0_reserve": 2693671.7119850684,
+        "token1_reserve": 2224983513.65903
+    }
+]

@@ -10,10 +10,13 @@ QUICKNODE_RPC = "https://yolo-aged-darkness.quiknode.pro/401a21cac95f67e72bb1478
 QUICKNODE_WSS = "wss://yolo-aged-darkness.quiknode.pro/401a21cac95f67e72bb1478cf94b4ff0763535cc"
 INFURA_WSS = "wss://mainnet.infura.io/ws/v3/655599352d27480195e2cf5c52581754"
 INFURA_RPC = "https://mainnet.infura.io/v3/655599352d27480195e2cf5c52581754"
-CURRENT_RPC, CURRENT_WSS = INFURA_RPC, INFURA_WSS
+ALCHEMY_WSS = "wss://eth-mainnet.g.alchemy.com/v2/9qCuMumrhLZzVLIRFV9mELoZ-TlKOFzU"
+ALCHEMY_RPC = "https://eth-mainnet.g.alchemy.com/v2/9qCuMumrhLZzVLIRFV9mELoZ-TlKOFzU"
+CURRENT_RPC, CURRENT_WSS = ALCHEMY_RPC, ALCHEMY_WSS
+
 UNISWAP_V3_ROUTER = "0xe592427a0aece92de3edee1f18e0157c05861564"
 UNISWAP_V2_ROUTER = "0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
-#UNISWAP_V3_ROUTER = "0xb41b78Ce3D1BDEDE48A3d303eD2564F6d1F6fff0"
+PANCAKE_ROUTER = "0x65b382653f7C31bC0Af67f188122035461ec9C76"
 
 def CheckSwapTransaction(data):
     '''
@@ -38,11 +41,22 @@ def CheckSwapTransaction(data):
         tx_hash = data["params"]["result"]
         tx_details = fetch_transaction_details(tx_hash)
         if tx_details == None:
-            return None
+            return None, None
         toAddress = tx_details['to']
-        if toAddress == UNISWAP_V2_ROUTER:
+        if toAddress == UNISWAP_V3_ROUTER:
+            print("New Uniswap V3 swap:", json.dumps(tx_details, indent=4))
+            tx_type = "Uniswap_v3"
+            return tx_details, tx_type
+        elif toAddress == UNISWAP_V2_ROUTER:
             print("New Uniswap V2 swap:", json.dumps(tx_details, indent=4))
-            return tx_details
+            tx_type = "Uniswap_v2"
+            return tx_details, tx_type
+        elif toAddress == PANCAKE_ROUTER:
+            print("New Pancake swap:", json.dumps(tx_details, indent=4))
+            tx_type = "Pancake"
+            return tx_details, tx_type
+        else:
+            return None, None
 
                     
 
