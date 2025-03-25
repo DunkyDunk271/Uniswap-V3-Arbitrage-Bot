@@ -1,4 +1,4 @@
 myenv/
-test/
 .conda/
 __pycache__/
+test/
