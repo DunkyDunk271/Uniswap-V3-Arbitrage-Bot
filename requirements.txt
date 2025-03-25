@@ -9,3 +9,4 @@ asyncio
 aiohttp
 websockets
 web3
+multicall
